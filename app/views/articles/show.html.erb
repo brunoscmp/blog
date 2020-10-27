@@ -7,5 +7,12 @@
   <strong>Text:</strong>
   <%= @article.text %>
 </p>
+<br>
+<h2>Comments</h2>
+<%= render @article.comments%>
+<br>
+<h2>Add a comment:</h2>
+<%= render 'comments/form'%>
+<br>
 <%= link_to 'Editar',edit_article_path(@article)%>
 <%= link_to 'Voltar', articles_path%>
